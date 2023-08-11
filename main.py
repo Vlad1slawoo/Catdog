@@ -18,7 +18,7 @@ def predict(image):
     with torch.no_grad():
         output = model(image)
         predicted = (torch.sigmoid(output) > 0.5).float().item()
-    return "Псина обнаружена" if predicted else "Это котик!"
+    return "обнаружена псина" if predicted else "котик!"
 
 st.title('Котик я милый или псина сутулая')
 
