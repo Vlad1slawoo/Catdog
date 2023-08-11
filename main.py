@@ -22,7 +22,7 @@ def predict(image):
 
 st.title('Котик я милый или псина сутулая')
 
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
+uploaded_file = st.file_uploader("Выберите фотографию", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
